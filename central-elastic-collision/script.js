@@ -8,19 +8,11 @@ var canv = canvas.getContext("2d");
 
 var impulse_item = document.getElementById("impulse");
 
-const BORDERS = true;
+const X_MIN = 0;
+const X_MAX = canvas.width;
+const Y_MIN = 0;
+const Y_MAX = canvas.height;
 
-if(BORDERS) {
-    const X_MIN = 0;
-    const X_MAX = canvas.width;
-    const Y_MIN = 0;
-    const Y_MAX = canvas.height;
-} else {
-    const X_MIN = -Math.INFINITY;
-    const Y_MIN = -Math.INFINITY;
-    const X_MAX = Math.INFINITY;
-    const Y_MAX = Math.INFINITY;
-}
 var animationActive = true;
 
 var start = 0;
